@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.navbarMain {
+  width: 90%;
+  margin: auto;
+  /* background: rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+}
+
+.navbar-brand {
+  width: 10%;
+}
+
+.navPart1 {
+  width: 80%;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  border-color: white !important;
+}
+
+.navPart2 {
+  width: 10%;
+}
+
+.btn-primary {
+  padding: 10px 25x 10px 25px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(145deg, #0bddba, #05cfd6);
+  border: none !important;
+}
+.heuSection{
+  padding-bottom: 8%;
+}
+.containerONe {
+  width: 100%;
+
+}
+
+.heuText {
+  width: 40%;
+  margin: auto;
+}
+
+.heuText>p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 35px 20px 20px 20px;
+  margin: 0px;
+}
+
+.nav-link,
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+  background-color: none;
+}
+
+
+
+.stylistTextEffect {
+  width: 34%;
+  margin: auto;
+
+}
+
+.bottom-container {
+  color: #ffffff00;
+  font-weight: bold;
+  font-size: 6vw;
+  /* text-shadow: 3px 3px 20px #091972e3,
+    -2px 1px 30px #0019a788; */
+  position: absolute;
+
+}
+
+.top-container {
+  color: rgb(255, 255, 255);
+  font-size: 6vw;
+  font-weight: bold;
+  clip-path: circle(25% at 85% 50%);
+  animation: circleMove 8s ease-in-out infinite;
+  position: absolute;
+}
+
+@keyframes circleMove {
+
+  0%,
+  100% {
+    clip-path: circle(20% at 85% 50%);
+  }
+
+  50% {
+    clip-path: circle(20% at 15% 50%);
+  }
+}
+
+.inputLink {
+  width: 50% !important;
+  margin: auto !important;
+  margin-top: 10% !important;
+}
+
+.form-control {
+  height: 50px;
+}
+
+.btnShorten {
+  color: white !important;
+  font-size: 1.5vw !important;
+  background-color: rgb(0, 65, 187) !important;
+}
+
+.waveCurve {
+  position: relative;
+  background: linear-gradient(90deg, #021B79, #0575E6);
+  /* min-height: 700px; */
+}
+
+/* .waveCurve::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
