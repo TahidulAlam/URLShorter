@@ -12,11 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/uikit.min.css">
 </head>
 
 <body>
     <div class="containerONe">
-      <nav class="navbar navbar-expand-lg navbar-dark navbarMain">
+      <nav class="navbar navbar-expand-lg navbar-dark navbarMain p-5">
         <div class="container-fluid ">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -31,15 +33,15 @@
               <a class="nav-link" href="#">contact us </a>
             </div>
             <form class="d-flex gap-2 navPart2">
-              <button class="btn btn-primary" type="Login">LogIn</button>
-              <button class="btn btn-primary" type="SignUp">SignUp</button>
+              <button class="btn btn-primary btn-lg" type="Login">LogIn</button>
+              <button class="btn btn-primary btn-lg" type="SignUp">SignUp</button>
             </form>
           </div>
         </div>
       </nav>
       <section class="heuSection">
         <div class="heuText">
-          <p >
+          <p>
             URL Shorter is the best link management service to <br> track, brand, and share short URLs.
           </p>
         </div>
@@ -52,20 +54,28 @@
             URL Shorter
           </div>
         </div>
-
-        <div class="input-group inputLink">
-          <input type="text" class="form-control" placeholder="Shorten your link
-          " aria-describedby="button-addon2">
-          <button class="btn btnShorten" type="button" id="button-addon2">Shorten
-            <i class="fa-solid fa-angle-right"></i> </button>
+        <div class="container">
+          <div class=" row d-flex justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+              <div class="input-group inputLink">
+                <input type="text" class="form-control" placeholder="Shorten your link
+                " aria-describedby="button-addon2"> </input>
+                <button class="btn btnShorten" type="button" id="button-addon2">Shorten
+                  </i> </button>
+              </div>
+            </div>
+            
+            
+          </div>
         </div>
+        
       </section>
      <div class="waveCurve" >
       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050.52 126.28"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M1050.52,68.5V194.78H0l166.52-75.62A381.58,381.58,0,0,1,437.23,102.1a381.52,381.52,0,0,0,112.91,17.09,381.67,381.67,0,0,0,113.91-17.4l50.83-15.9A381.61,381.61,0,0,1,828.77,68.5Z" transform="translate(0 -68.5)"/></svg>
      </div> 
     </div>
-    <div class="row serviceSection">
-      <div class="col-4 p-3">
+    <div class="row serviceSection d-flex justify-content-center">
+      <div class="col-lg-4 col-md-4 col-sm-12 p-3">
         <div class="serviceSectionContent">
           <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
           <h2>Shorten Links</h2>
@@ -74,7 +84,7 @@
           </p>
         </div>
       </div>
-      <div class="col-4 p-3">
+      <div class="col-lg-4 col-md-4 col-sm-12 p-3">
         <div class="serviceSectionContent">
           <i class="fa-solid fa-chart-line"></i>
           <h2>Track Clicks</h2>
@@ -83,7 +93,7 @@
           </p>
         </div>
       </div>
-      <div class="col-4 p-3">
+      <div class="col-lg-4 col-md-4 col-sm-12 p-3">
         <div class="serviceSectionContent">
           <i class="fa-brands fa-chrome"></i>
           <h2>Browser Extension</h2>
@@ -97,7 +107,7 @@
       <svg  class="wave3" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050.52 126.28"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M1051.48,0,885,75.62A381.58,381.58,0,0,1,614.25,92.68,381.55,381.55,0,0,0,387.43,93l-50.83,15.9a381.61,381.61,0,0,1-113.89,17.39H1V0Z" transform="translate(-0.96 0)"/></svg>
       <h1 class="cardSectionHEader">Upgrade Your Links</h1>
       <div class="row cardSection">
-        <div class="col-4 p-3">
+        <div class="col-lg-4 col-md-4 col-sm-6 p-3">
           <div class="cardSectionContent">
             <div class="cardSectionContentHeader"><h1>5$</h1><span>/month</span></div>
             <div class="cardSectionContentText" >
@@ -127,11 +137,11 @@
               </ul>
             </div>
             <div class="cardSectionContentFooter">
-              <button class="btn btn-primary">Sign Up</button>
+              <button class="btn btn-primary btn-lg">Sign Up</button>
             </div>
           </div>
         </div>
-        <div class="col-4 p-3">
+        <div class="col-lg-4 col-md-4 col-sm-6 p-3">
           <div class="cardSectionContent">
             <div class="cardSectionContentHeader"><h1>10$</h1><span>/month</span></div>
             <div class="cardSectionContentText">
@@ -161,12 +171,12 @@
               </ul>
             </div> 
             <div class="cardSectionContentFooter">
-              <button class="btn btn-primary">Sign Up</button>
+              <button class="btn btn-primary btn-lg">Sign Up</button>
             </div>
           </div>
         
         </div>
-        <div class="col-4 p-3">
+        <div class="col-lg-4 col-md-4 col-sm-6 p-3">
           <div class="cardSectionContent">
             <div class="cardSectionContentHeader"><h1>25$</h1><span>/month</span></div>
             <div class="cardSectionContentText">
@@ -198,17 +208,138 @@
                   Link Retarget</li>
             </div>
             <div class="cardSectionContentFooter">
-              <button class="btn btn-primary">Sign Up</button>
+              <button class="btn btn-primary btn-lg">Sign Up</button>
             </div> 
           </div>
           
           
         </div>
       </div>
-
+      <div class="waveCurve" >
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050.52 126.28"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M1050.52,68.5V194.78H0l166.52-75.62A381.58,381.58,0,0,1,437.23,102.1a381.52,381.52,0,0,0,112.91,17.09,381.67,381.67,0,0,0,113.91-17.4l50.83-15.9A381.61,381.61,0,0,1,828.77,68.5Z" transform="translate(0 -68.5)"/></svg>
+       </div> 
+    </div>
+    <div class="blogSection">
+      <h1 class="blogSectionHEader">Recent blog post</h1>
+      <div uk-slider="autoplay:true pause-on-hover: true" class="blogSectionAll">
+        <div class="uk-position-relative">  
+            <div class="uk-slider-container uk-light">
+                <ul class=" uk-slider-items uk-grid uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m">
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    <li>
+                      <div  class="blogSectionCardContent">
+                        <a href="#">
+                        <img src="./image/pic1.jpg" alt="">
+                        <h3>Welcome to URL shorter</h3>
+                        <p>Tiny URLs a Bit shorter than the rest.URL Shorter makes long links look cleaner and easier to share!</p>
+                        </a>  
+                      </div> 
+                    </li>
+                    
+                </ul>
+            </div>
+    
+            <div class="uk-hidden@s uk-light">
+                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+    
+            <div class="uk-visible@s">
+                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+    
+        </div>
+    
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+    
+    </div>
+    
+    </div>
+    <div class="videoSectionAll">
+      <svg  class="wave3" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050.52 126.28"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M1051.48,0,885,75.62A381.58,381.58,0,0,1,614.25,92.68,381.55,381.55,0,0,0,387.43,93l-50.83,15.9a381.61,381.61,0,0,1-113.89,17.39H1V0Z" transform="translate(-0.96 0)"/></svg>
+      <h1 class="videoSectionHeader">Tutorial video</h1>
+      <div class="videoSection">
+        <div class="row videoSectionContent">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="videoSectionContentVideo">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/F5mk_hbLsaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="videoSectionContentVideo">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tuw8hxrFBH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   <script src="js/script.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
 </body>
 
 </html>

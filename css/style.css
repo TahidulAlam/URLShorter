@@ -6,10 +6,10 @@
 
 }
 
-.container {
+/* .container {
   padding: 0;
   margin: 0;
-}
+} */
 ol,ul{
   margin: 0;
   padding: 0 !important;
@@ -19,6 +19,82 @@ li{
   padding: 0;
   list-style: none;
 }
+*+h2,*+p{
+  margin: 0 !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media all and (max-width: 600px) {
+  .heuText {
+    width: 80% !important;
+  }
+
+  .stylistTextEffect {
+    width: 60% !important;
+    margin: auto;
+    margin-bottom: 20px !important;
+    overflow: hidden;
+  }
+  .heuText>p {
+    font-size: 19px !important;
+  }
+  .bottom-stylistTextEffect {
+    font-size: 40px !important;
+  
+  }
+  .top-stylistTextEffect {
+    font-size: 40px !important;
+  }
+  .inputLink {
+    margin-top: 20% !important;
+  }
+  .serviceSectionContent>i{
+    font-size: 40px !important;
+    padding: 10px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media all and (min-width: 600px) {
+
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+
+
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+
+
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media all and (min-width: 1200px) {
+
+
+
+
+
+
+}
+
+
+
 .navbarMain {
   width: 90%;
   margin: auto;
@@ -39,11 +115,10 @@ li{
 }
 
 .navPart2 {
-  width: 10%;
+  width: 20%;
 }
 
 .btn-primary {
-  padding: 10px 25x 10px 25px !important;
   border-radius: 10px !important;
   background:white !important;
   color: #010c35 !important;
@@ -60,14 +135,14 @@ li{
 }
 
 .heuText {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
 .heuText>p {
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   padding: 35px 20px 20px 20px;
   margin: 0px;
 }
@@ -83,20 +158,20 @@ li{
 .stylistTextEffect {
   width: 34%;
   margin: auto;
-
+  margin-bottom: 60px;
 }
 
 .bottom-stylistTextEffect {
   color: #ffffff00;
   font-weight: bold;
-  font-size: 6vw;
+  font-size: 80px;
   position: absolute;
 
 }
 
 .top-stylistTextEffect {
   color: rgb(255, 255, 255);
-  font-size: 6vw;
+  font-size: 80px;
   font-weight: bold;
   clip-path: circle(25% at 85% 50%);
   animation: circleMove 6s ease-in-out infinite;
@@ -116,10 +191,11 @@ li{
 }
 
 .inputLink {
-  width: 50% !important;
-  margin: auto !important;
-  margin-top: 10% !important;
+  margin-top: 15% !important;
 }
+/* .input-group{
+  width: 80% !important;
+} */
 
 .form-control {
   height: 50px;
@@ -127,19 +203,24 @@ li{
 
 .btnShorten {
   color: white !important;
-  font-size: 1.5vw !important;
+  font-size: 20px;
   background-color: rgb(0, 46, 114) !important;
 }
 
-.waveCurve {
+/* .waveCurve {
 margin-top: -35px;
-}
+} */
 
-.serviceSection{
+.serviceSection, 
+.blogSectionAll, 
+.cardSection, 
+.footerSection,
+.videoSection {
   width: 90%;
   margin: auto !important;
   text-align: center;
   z-index: 1000;
+  padding-bottom: 50PX;
   
 }
 .serviceSectionContent{
@@ -169,7 +250,7 @@ margin-top: -35px;
 .wave3{
   margin-bottom: 20px;
 }
-.cardSectionAll{
+.cardSectionAll,.footerSectionAll{
   background: linear-gradient(90deg, #021B79 ,#0575E6);
 }
 .cardSectionHEader{
@@ -178,17 +259,15 @@ margin-top: -35px;
   color: white !important;
   padding: 10px;
 }
-.cardSection{
-  width: 90% !important;
-  margin: auto !important;
-  
-}
 .cardSectionContent{
   background: rgba(255, 255, 255, 0.055);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.151);
   cursor: pointer;
+}
+.uk-grid>*>:last-child {
+  padding-bottom: 20px !important;
 }
 .cardSectionContent:hover {
   transform: translateY(-5px);
@@ -219,7 +298,50 @@ text-align: left !important;
   padding-bottom: 33px;
 }
 .cardSectionContentFooter{
-  /* background-color: white; */
   padding: 15px 10px 15px 10px;
   border-radius:0px 0px 20px 20px ;
 }
+
+.blogSectionHEader{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  color: rgb(0, 15, 58) !important;
+}
+.blogSectionCardContent{
+  padding: 20px;
+  border: 2px solid #010c351f;
+  border-radius: 5px;
+}
+.blogSectionCardContent:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.blogSectionCardContent>a{
+text-decoration: none;
+color: #010c35;
+}
+.blogSectionCardContent>a>img{
+  width: 100%;
+  height: auto;
+}
+.blogSectionCardContent>a>h3{
+  color: #010c35;
+  font-weight: bold;
+}
+.blogSectionCardContent>a>p{
+  color: #010c35;
+}
+.videoSectionAll{
+  background: linear-gradient(90deg, #021B79 ,#0575E6);
+}
+.videoSectionHeader{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255) !important;
+}
+.videoSectionContentVideo{
+  padding: 5px;
+}
+
+
+
